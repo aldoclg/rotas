@@ -11,9 +11,9 @@ describe('AlunoFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AlunoFormComponent ]
+      declarations: [AlunoFormComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

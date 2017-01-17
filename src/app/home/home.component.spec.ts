@@ -1,7 +1,9 @@
+import { AppComponent } from './../app.component';
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { HomeComponent } from './home.component';
 
@@ -11,9 +13,16 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
+      declarations: [
+        HomeComponent
+      ],
+      imports: [
+        RouterTestingModule.withRoutes([
+          { path: '', component: HomeComponent }
+        ])
+      ],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

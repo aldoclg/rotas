@@ -29,7 +29,7 @@ export class CursosComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.inscricao.unsubscribe();
+    //this.inscricao.unsubscribe();
   }
 
   proximaPagina() {
